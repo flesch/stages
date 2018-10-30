@@ -1,0 +1,40 @@
+{
+  "name": "stages",
+  "description": "A small utility to parse the `Accept` header into an array of \"stages\".",
+  "homepage": "https://github.com/flesch/stages#readme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "email": "john@fles.ch",
+    "name": "John Flesch",
+    "url": "https://fles.ch/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flesch/stages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flesch/stages/issues"
+  },
+  "keywords": [
+    "accept",
+    "feature",
+    "header",
+    "preview",
+    "request",
+    "stage",
+    "toggle"
+  ],
+  "dependencies": {
+    "accept": "^3.0.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3"
+  },
+  "scripts": {
+    "prepare": "npm run prettier && npm test",
+    "prettier": "prettier --write \"**/*.js\"",
+    "test": "node test/test.js"
+  },
+  "license": "MIT"
+}
